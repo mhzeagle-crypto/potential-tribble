@@ -26,6 +26,8 @@ const nagykepElem = document.getElementById("nagykep");
 
 new Kepek(lista, galeriaElem);
 
+
+//alapkép megjelenítése mert szerintem jó ha van
 new NagyKep(
     lista[0].src,
     lista[0].cim,
