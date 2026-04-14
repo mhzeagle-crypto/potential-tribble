@@ -1,3 +1,4 @@
+//Kep.js
 
 export default class Kep {
     constructor(src, cim, leiras, index, szuloElem) {
@@ -18,8 +19,6 @@ export default class Kep {
 
         this.kepElem.innerHTML = `
             <img src="${this.src}" alt="${this.cim}">
-            <h3>${this.cim}</h3>
-            <p>${this.leiras}</p>
         `;
 
         this.szuloElem.appendChild(this.kepElem);

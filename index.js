@@ -1,3 +1,5 @@
+//index.js
+
 import Kepek from "./Kepek.js";
 
 const lista = [
@@ -17,6 +19,15 @@ const galeriaElem = document.getElementById("galeria");
 
 new Kepek(lista, galeriaElem);
 
+const nagykepElem = document.getElementById("nagykep");
+
 window.addEventListener("kivalaszt", (e) => {
-    console.log("Kiválasztott kép index:", e.detail);
+    const index = e.detail;
+    const adat = lista[index];
+
+    nagykepElem.innerHTML = `
+        <img src="${adat.src}" alt="${adat.cim}">
+        <h2>${adat.cim}</h2>
+        <p>${adat.leiras}</p>
+    `;
 });

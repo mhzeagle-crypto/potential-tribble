@@ -1,1 +1,17 @@
-img {width: 500px;}
+#galeria {
+    display: flex;
+    gap: 10px;
+}
+
+.kep img {
+    width: 150px;
+    cursor: pointer;
+}
+
+#nagykep img {
+    width: 400px;
+}
+
+.kep img:hover {
+    transform: scale(1.05);
+}
