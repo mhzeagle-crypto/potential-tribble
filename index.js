@@ -1,6 +1,7 @@
 //index.js
 
 import Kepek from "./Kepek.js";
+import NagyKep from "./NagyKep.js";
 
 const lista = [
     {
@@ -21,18 +22,25 @@ const lista = [
 ];
 
 const galeriaElem = document.getElementById("galeria");
+const nagykepElem = document.getElementById("nagykep");
 
 new Kepek(lista, galeriaElem);
 
-const nagykepElem = document.getElementById("nagykep");
+new NagyKep(
+    lista[0].src,
+    lista[0].cim,
+    lista[0].leiras,
+    nagykepElem
+);
 
 window.addEventListener("kivalaszt", (e) => {
     const index = e.detail;
     const adat = lista[index];
 
-    nagykepElem.innerHTML = `
-        <img src="${adat.src}" alt="${adat.cim}">
-        <h2>${adat.cim}</h2>
-        <p>${adat.leiras}</p>
-    `;
+    new NagyKep(
+        adat.src,
+        adat.cim,
+        adat.leiras,
+        nagykepElem
+    );
 });
