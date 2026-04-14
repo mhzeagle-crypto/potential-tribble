@@ -4,12 +4,12 @@
 }
 
 .kep img {
-    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 
 #nagykep img {
-    width: 400px;
+    height: 400px;
 }
 
 .kep img:hover {

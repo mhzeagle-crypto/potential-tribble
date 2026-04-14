@@ -12,7 +12,12 @@ const lista = [
         src: "pfp.PNG",
         cim: "Második kép",
         leiras: "Leírás 2"
-    }
+    },
+    {
+        src: "img3.jpg",
+        cim: "Harmadik kép",
+        leiras: "Leírás 3"
+    },
 ];
 
 const galeriaElem = document.getElementById("galeria");
